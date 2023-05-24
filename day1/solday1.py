@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Dec 11 15:02:03 2022
-
-@author: Shardool
-"""
 
 data  = open("avc1.txt", "r").read().split("\n\n")
 
