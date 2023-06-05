@@ -5,7 +5,7 @@
 signal = open("day6input.txt").read()
 
 ## A function which finds the message depending of the size provided by the question
-def detect_message(size):
+def message_loc(size):
     for i,char in enumerate(signal):
         setOFsignal = set(signal[i:i+size]) ## set does not allow for duplicates hence if the length matches 
         #we arrive at our solution
@@ -13,5 +13,5 @@ def detect_message(size):
             return i+size 
         
 
-print("Solution Part 1:", detect_message(4))
-print("Solution Part 2:", detect_message(14))
+print("Solution Part 1:", message_loc(4))
+print("Solution Part 2:", message_loc(14))
